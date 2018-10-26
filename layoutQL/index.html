@@ -1,0 +1,351 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Sufee Admin - HTML5 Admin Template</title>
+	<meta name="description" content="Sufee Admin - HTML5 Admin Template">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-icon.png">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/flag-icon.min.css">
+	<link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+	<!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+	<link rel="stylesheet" href="assets/scss/style.css">
+	<link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/lib/datatable/dataTables.bootstrap.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+	<style>
+		.QLDT .formDeThi{
+			
+		}
+	
+	
+	.QLDT .formEdit {
+			display:none;
+			
+			margin: auto;
+			z-index: 1;
+
+		}
+		.QLDT .formEdit .chude{
+			margin-bottom:15px
+		}
+		.QLDT .formEdit label
+		{
+			font-size:18px;
+			font-weight: 600;
+		}
+		.QLDT .formEdit .groupChuDe{
+			border-top:1px solid;
+			border-bottom:1px solid;
+			padding:20px;
+		}
+		
+		.QLDT .formDeThi .btnV,.btnE{
+			font-size:18px;
+			color:darkgreen;
+			padding:5px;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<!-- Left Panel -->
+
+	<aside id="left-panel" class="left-panel">
+		<nav class="navbar navbar-expand-sm navbar-default">
+
+			<div class="navbar-header">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+
+			</div>
+
+			<div id="main-menu" class="main-menu collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+
+					<h3 class="menu-title">Quản lý Đề thi</h3>
+					<!-- /.menu-title -->
+					<li class="active">
+						<a href="/QLSP"> <i class="menu-icon ti-email"></i>Hồ sơ cá nhân</a>
+					</li>
+					<li>
+						<a href="/QLSP"> <i class="menu-icon ti-email"></i>Danh sách đề thi</a>
+					</li>
+					<li>
+						<a href="/QLSP"> <i class="menu-icon ti-email"></i>Thêm đề thi</a>
+					</li>
+					<li>
+						<a href="/QLSP"> <i class="menu-icon ti-email"></i>Đăng xuất</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+	</aside>
+	<!-- /#left-panel -->
+
+	<!-- Left Panel -->
+
+	<!-- Right Panel -->
+
+	<div id="right-panel" class="right-panel">
+
+
+
+		<div class="breadcrumbs">
+			<div class="col-sm-4">
+				<div class="page-header float-left">
+					<div class="page-title">
+						<h1>DANH SÁCH ĐỀ THI</h1>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content mt-3">
+			<!--phần nội dung bảng để trong div này-->
+			<div class="QLDT container">
+				<div class="formDeThi card">
+					<div class="card-header">
+						<strong class="card-title">Đề thi</strong>
+					</div>
+					<div class="card-body">
+
+						<table id="bootstrap-data-table" class="table table-striped table-bordered">
+							<thead>
+								<tr>
+									<th>id</th>
+									<th>title</th>
+									<th>Thời gian bắt đầu</th>
+									<th>Thời lượng</th>
+									<th>Lớp</th>
+									<th>Đã thi</th>
+									<th>Tool</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>01</td>
+									<td>Đề thi năm 2018</td>
+									<td>27-01-2018 6:20:00</td>
+									<td>60 p</td>
+									<td>1</td>
+									<td>true</td>
+									<td>
+										<a class="btnV" href="#"><i class="fa fa-eye"></i></a>
+										<a class="btnE" href="#"><i class="fa fa-edit"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>Đề thi năm 2018</td>
+									<td>27-01-2018 6:20:00</td>
+									<td>60 p</td>
+									<td>1</td>
+									<td>true</td>
+									<td>
+										<a class="btnV" href="#"><i class="fa fa-eye"></i></a>
+										<a class="btnE" href="#"><i class="fa fa-edit"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>Đề thi năm 2018</td>
+									<td>27-01-2018 6:20:00</td>
+									<td>60 p</td>
+									<td>1</td>
+									<td>true</td>
+									<td>
+										<a class="btnV" href="#"><i class="fa fa-eye"></i></a>
+										<a class="btnE" href="#"><i class="fa fa-edit"></i></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="formEdit">
+			<div class="card">
+							<div class="card-header">
+								<div class="row">
+									<div class="col-sm-11"> <strong class="titleForm card-title">Edit </strong></div>
+									<div class="col-sm-1">
+										<div class="closeEdit"><i class="fa fa-close" style="font-size:24px;"></i></div>
+									</div>
+								</div>
+
+
+							</div>
+							<div class="card-body">
+								<form action="/abc" method="post" class="form-horizontal">
+									<div class="row form-group">
+										<div class="col col-md-3"><label class=" form-control-label">Tên đề thi</label></div>
+										<div class="col-12 col-md-9">
+											<input type="text" name="title" class="form-control" />
+										</div>
+									</div>
+									<div class="row form-group">
+										<div class="col col-md-3"><label class=" form-control-label">Lớp</label></div>
+										<div class="col-12 col-md-9"><select class="form-control" id="sel1">
+											<option>Lớp 1</option>
+											<option>Lớp 2</option>
+											<option>Lớp 3</option>
+   
+  												</select></div>
+									</div>
+									<div class="row form-group">
+										<div class="col col-md-3"><label class=" form-control-label">Thời gian bắt đầu</label></div>
+										<div class="col-12 col-md-9">
+											<input type="datetime-local"/>
+										</div>
+									</div>
+									<div class="row form-group">
+										<div class="col col-md-3"><label class=" form-control-label">Thời lượng</label></div>
+										<div class="col-12 col-md-9"><input type="time" name="price" class="form-control" /></div>
+									</div>
+									<div class="row form-group">
+										<div class="col col-md-3"><label class=" form-control-label">Chủ đề</label></div>
+										<div class="groupChuDe col col-md-9">
+											<div class="chude col-md-4">Chủ đề 1 <input type="number"></div>
+											<div class="chude col-md-4">Chủ đề 2 <input type="number"></div>
+											<div class="chude col-md-4">Chủ đề 3 <input type="number"></div>
+											<div class="chude col-md-4">Chủ đề 4 <input type="number"></div>
+											<div class="chude col-md-4">Chủ đề 5 <input type="number"></div>
+											<div class="chude col-md-4">Chủ đề 6 <input type="number"></div>
+											
+										</div>
+									</div>
+									<div class="row form-group">
+										<div class="col col-md-3"><label class=" form-control-label">Tổng cộng</label></div>
+										<div class="col col-md-9">
+											20/30 câu
+											
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary btn-sm">
+                          <i class="fa fa-dot-circle-o"></i> Submit
+                        </button>
+								</form>
+							</div>
+						</div>
+						<!--card-->
+					</div>   
+			
+			</div>
+		</div>
+	</div>
+	<!-- Right Panel -->
+
+	<script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+	<script src="assets/js/lib/data-table/datatables.min.js"></script>
+	<script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+	<script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+	<script src="assets/js/lib/data-table/buttons.bootstrap.min.js"></script>
+	<script src="assets/js/lib/data-table/jszip.min.js"></script>
+	<script src="assets/js/lib/data-table/pdfmake.min.js"></script>
+	<script src="assets/js/lib/data-table/vfs_fonts.js"></script>
+	<script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
+	<script src="assets/js/lib/data-table/buttons.print.min.js"></script>
+	<script src="assets/js/lib/data-table/buttons.colVis.min.js"></script>
+	<script src="assets/js/lib/data-table/datatables-init.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$('#bootstrap-data-table-export').DataTable();
+			$(".formDeThi .btnE").click(function() {
+				$(".QLDT .formEdit form").attr("action", "/edit");
+				$(".QLDT .titleForm").text("Edit");
+				$(".QLDT .formDeThi").css("display", "none");
+				$(".QLDT .formEdit").css("display", "block");
+				var id = $(this).parent().siblings().eq(0).text();
+
+				$.ajax({
+					url: "/editShoe",
+					contentType: "application/json",
+					data: {
+						"id": id
+					},
+					success: function(result) {
+
+
+						var res = JSON.parse(result);
+						$(".formEdit input[name='id']").val(res.id);
+						$(".formEdit input[name='title']").val(res.title);
+						$(".formEdit select[name='category']").val(res.category);
+						$(".formEdit input[name='file']").val(res.thumbnail);
+						$(".formEdit input[name='price']").val(res.price);
+					}
+				})
+			})
+			$(".formDeThi .btnV").click(function() {
+				$(".QLDT .formDeThi").css("display", "none");
+				$(".QLDT .formCauHoi").css("display", "block");
+				var id = $(this).parent().siblings().eq(0).text();
+				$(".formDetail input[name='id']").val(id);
+				$.ajax({
+					url: "/detailShoe",
+					contentType: "application/json",
+					data: {
+						"id": id
+					},
+					success: function(result) {
+
+
+						var res = JSON.parse(result);
+						$("#resAjax").empty();
+						for (var i in res) {
+							var temp = "<tr>" +
+								"<td>" + res[i].id + "</td>" +
+								"<td>" + res[i].color + "</td>" +
+								"<td>" + res[i].size + "</td>" +
+								"<td>" + res[i].soLuong + "</td>" +
+								"<td>" +
+								'<a href="deleteDetailShoe/?id=' + res[i].id + '&idSize=' + res[i].idSize + '&idColor=' + res[i].idColor + '" class="btn-sm btn-danger btnDelete"><i class="fa fa-close" style=""></i></a>' +
+
+								"</td>" +
+								"</tr>";
+
+							$("#resAjax").append(temp);
+						}
+					}
+				})
+			})
+			$(".closeEdit").click(function() {
+				$(".QLDT .formDeThi").css("display", "block");
+				$(".QLDT .formEdit").css("display", "none");
+				$(".QLDT .formCauHoi").css("display", "none");
+
+			})
+			
+
+		});
+
+	</script>
+
+</body>
+
+</html>
